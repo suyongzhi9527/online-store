@@ -11,7 +11,7 @@ export const queryCategorygoods = params => { return axios.get(`${host}/indexgoo
 export const newGoods = params => { return axios.get(`${host}/newgoods/`) }
 
 //获取轮播图
-export const bannerGoods = params => { return axios.get(`${host}/banners/`) }
+export const bannerGoods = params => { return axios.get(`${local_host}/banners/`) }
 
 //获取商品类别信息
 export const getCategory = params => {
@@ -84,13 +84,13 @@ export const getOrderDetail = orderId => {return axios.get(`${host}/orders/`+ord
 
 
 //获取留言
-export const getMessages = () => {return axios.get(`${host}/messages/`)}
+export const getMessages = () => {return axios.get(`${local_host}/messages/`)}
 
 //添加留言
-export const addMessage = params => {return axios.post(`${host}/messages/`, params, {headers:{ 'Content-Type': 'multipart/form-data' }})}
+export const addMessage = params => {return axios.post(`${local_host}/messages/`, params, {headers:{ 'Content-Type': 'multipart/form-data' }})}
 
 //删除留言
-export const delMessages = messageId => {return axios.delete(`${host}/messages/`+messageId+'/')}
+export const delMessages = messageId => {return axios.delete(`${local_host}/messages/`+messageId+'/')}
 
 //添加收货地址
 export const addAddress = params => {return axios.post(`${host}/address/`, params)}
