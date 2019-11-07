@@ -247,8 +247,7 @@
                 order_mount:this.totalPrice
               }
             ).then((response)=> {
-              alert('订单创建成功')
-              window.location.href=response.data.alipay_url;
+              alert('订单创建成功');
             }).catch(function (error) {
               console.log(error);
             });

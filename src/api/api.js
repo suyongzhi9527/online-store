@@ -5,7 +5,7 @@ let host = 'http://shop.projectsedu.com';
 let local_host = 'http://127.0.0.1:8000';
 
 //获取商品类别信息
-export const queryCategorygoods = params => { return axios.get(`${host}/indexgoods/`) }
+export const queryCategorygoods = params => { return axios.get(`${local_host}/indexgoods/`) }
 
 //获取首页中的新品
 export const newGoods = params => { return axios.get(`${host}/newgoods/`) }
@@ -25,7 +25,7 @@ export const getCategory = params => {
 
 
 //获取热门搜索关键词
-export const getHotSearch = params => { return axios.get(`${host}/hotsearchs/`) }
+export const getHotSearch = params => { return axios.get(`${local_host}/hotsearchs/`) }
 
 //获取商品列表
 export const getGoods = params => { return axios.get(`${local_host}/goods/`, { params: params }) }
@@ -34,13 +34,13 @@ export const getGoods = params => { return axios.get(`${local_host}/goods/`, { p
 export const getGoodsDetail = goodId => { return axios.get(`${local_host}/goods/${goodId}`+'/') }
 
 //获取购物车商品
-export const getShopCarts = params => { return axios.get(`${host}/shopcarts/`) }
+export const getShopCarts = params => { return axios.get(`${local_host}/shopcarts/`) }
 // 添加商品到购物车
-export const addShopCart = params => { return axios.post(`${host}/shopcarts/`, params) }
+export const addShopCart = params => { return axios.post(`${local_host}/shopcarts/`, params) }
 //更新购物车商品信息
-export const updateShopCart = (goodsId, params) => { return axios.patch(`${host}/shopcarts/`+goodsId+'/', params) }
+export const updateShopCart = (goodsId, params) => { return axios.patch(`${local_host}/shopcarts/`+goodsId+'/', params) }
 //删除某个商品的购物记录
-export const deleteShopCart = goodsId => { return axios.delete(`${host}/shopcarts/`+goodsId+'/') }
+export const deleteShopCart = goodsId => { return axios.delete(`${local_host}/shopcarts/`+goodsId+'/') }
 
 //收藏
 export const addFav = params => { return axios.post(`${local_host}/userfavs/`, params) }
@@ -74,13 +74,13 @@ export const updateUserInfo = params => { return axios.patch(`${local_host}/user
 
 
 //获取订单
-export const getOrders = () => { return axios.get(`${host}/orders/`) }
+export const getOrders = () => { return axios.get(`${local_host}/orders/`) }
 //删除订单
-export const delOrder = orderId => { return axios.delete(`${host}/orders/`+orderId+'/') }
+export const delOrder = orderId => { return axios.delete(`${local_host}/orders/`+orderId+'/') }
 //添加订单
-export const createOrder = params => {return axios.post(`${host}/orders/`, params)}
+export const createOrder = params => {return axios.post(`${local_host}/orders/`, params)}
 //获取订单详情
-export const getOrderDetail = orderId => {return axios.get(`${host}/orders/`+orderId+'/')}
+export const getOrderDetail = orderId => {return axios.get(`${local_host}/orders/`+orderId+'/')}
 
 
 //获取留言

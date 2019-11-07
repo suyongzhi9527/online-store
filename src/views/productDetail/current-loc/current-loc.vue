@@ -2,44 +2,44 @@
     <div class="current-loc">
         <div class="breadcrumbs cle z-detail-box">
           <div class="menus">
-            <a href="http://sx.web51.youxueshop.com/">首页</a>
+            <a href="http://localhost:8080/">首页</a>
             <code>&gt;</code>
-            <a href="http://sx.web51.youxueshop.com/category.php?id=2">生鲜食品</a>
+            <a href="#">生鲜食品</a>
             <code>&gt;</code>
-            <a href="http://sx.web51.youxueshop.com/category.php?id=19">根茎类</a>
+            <a href="#">根茎类</a>
             <code>&gt;</code>
             新鲜水果甜蜜香脆单果约800克
           </div>
       </div>
-    
+
     </div>
-  
+
 </template>
 <script>
-  
+
   export default {
     data () {
         return {
-            
+
         };
     },
     components: {
-        
+
     },
     props: {
-        
+
     },
     created () {
-        
+
     },
     watch: {
-        
+
     },
     computed: {
 
     },
     methods: {
-        
+
     }
 }
 </script>
